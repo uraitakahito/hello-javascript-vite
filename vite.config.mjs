@@ -12,11 +12,11 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         hoge: resolve(__dirname, 'src/hoge/index.html'),
       },
-      // https://github.com/vitejs/vite/issues/378#issuecomment-789366197
       output: {
+        // https://rollupjs.org/configuration-options/#output-entryfilenames
         entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
   },
