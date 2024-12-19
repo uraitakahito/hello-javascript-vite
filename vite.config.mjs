@@ -14,7 +14,7 @@ export default defineConfig({
       },
       output: {
         // https://rollupjs.org/configuration-options/#output-entryfilenames
-        entryFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
       },
