@@ -11,7 +11,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         counter: resolve(__dirname, 'src/counter/index.html'),
-        hoge: resolve(__dirname, 'src/hoge/index.html'),
       },
       output: {
         // https://rollupjs.org/configuration-options/#output-entryfilenames
