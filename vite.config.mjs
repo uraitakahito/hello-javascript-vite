@@ -7,6 +7,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
+    cssMinify: false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
