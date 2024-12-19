@@ -16,7 +16,15 @@ export default defineConfig({
         // https://rollupjs.org/configuration-options/#output-entryfilenames
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]',
+        // PreRenderedAsset:
+        // https://github.com/rollup/rollup/blob/7a8ac460c62b0406a749e367dbd0b74973282449/src/rollup/types.d.ts#L855-L864
+        assetFileNames: (preRenderedAsset) => {
+          let extType = preRenderedAsset.name.split('.')[1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = 'images';
+          }
+          return `assets/${extType}/[name]-[hash].[ext]`;
+        },
       },
     },
   },
