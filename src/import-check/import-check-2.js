@@ -1,3 +1,3 @@
 import hello from '@uraitakahito/hello-npmjs';
 
-hello();
+console.log(hello.say());
