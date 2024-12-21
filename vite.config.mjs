@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         counter: resolve(__dirname, 'src/counter/index.html'),
+        importCheck1: resolve(__dirname, 'src/import-check/import-check-1.html'),
       },
       output: {
         // https://rollupjs.org/configuration-options/#output-entryfilenames
