@@ -14,7 +14,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.31.0",
     "markuplint": "^4.11.4",
-    "npm-check-updates": "^17.1.11",
+    "npm-check-updates": "^17.1.12",
     "vite": "^6.0.4"
   },
   "dependencies": {
