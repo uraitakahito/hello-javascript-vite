@@ -8,6 +8,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   build: {
     cssMinify: false,
+    polyfillModulePreload: false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
