@@ -13,7 +13,15 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         counter: resolve(__dirname, 'src/counter/index.html'),
-        importCheck1: resolve(__dirname, 'src/import-check/import-check-1.html'),
+        importCheck10: resolve(__dirname, 'src/import-check/import-check-1.html'),
+
+        // If you uncomment and enable importCheck11, both importCheck10 and importCheck11 will
+        // import import-check-1-0.js.
+        // As a result, the imported text.js will become a separate independent file, and the
+        // transpiled importCheck10 and importCheck11 will import text.js.
+        //
+        // importCheck11: resolve(__dirname, 'src/import-check/import-check-1-1.js'),
+
         importCheck2: resolve(__dirname, 'src/import-check/import-check-2.html'),
       },
       output: {
