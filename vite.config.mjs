@@ -13,6 +13,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         counter: resolve(__dirname, 'src/counter/index.html'),
         importCheck1: resolve(__dirname, 'src/import-check/import-check-1.html'),
+        importCheck2: resolve(__dirname, 'src/import-check/import-check-2.html'),
       },
       output: {
         // https://rollupjs.org/configuration-options/#output-entryfilenames
@@ -29,5 +30,6 @@ export default defineConfig({
         },
       },
     },
+    minify: false,
   },
 });
